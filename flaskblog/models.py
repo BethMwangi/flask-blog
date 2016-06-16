@@ -8,7 +8,7 @@ db = SQLAlchemy(app)
 
 class Admin(db.Model):
     __tablename__ ='admin'
-    id = db.Column(db.Inyeger, primary_key = True)
+    id = db.Column(db.Integer, primary_key = True)
     userd = db.Column(db.String(100))
     
     def __init__(self, user):
