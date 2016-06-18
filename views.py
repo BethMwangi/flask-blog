@@ -9,3 +9,6 @@ from flask import render_template, request, flash, url_for, g, session, redirect
 @app.route('/index')
 def index():
     return render_template('index.html')
+
+
+

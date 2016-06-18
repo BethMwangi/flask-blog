@@ -1,13 +1,13 @@
 {% extends "index.html" %}
  
 {% block content %}
-  <h2>Add Post</h2>
+  <h2>Edit Tag</h2>
  
   {% for message in form.tag.errors %}
     <div class="flash">{{ message }}</div>
   {% endfor %}
   
-  <form action="{{ url_for( 'addtag' ) }}" method=post>
+  <form action="{{ url_for('edit_tag', id=tag_id) }}" method="post">
     {{ form.hidden_tag() }}
      <dl>
        <dt>{{ form.tag.label }}
